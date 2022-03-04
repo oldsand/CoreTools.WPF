@@ -3,47 +3,43 @@ using CoreTools.WPF.Prism;
 using Prism.Commands;
 using Prism.Regions;
 using Prism.Services.Dialogs;
+// ReSharper disable MemberCanBeProtected.Global These need to be public for binding purposes.
 
 namespace CoreTools.WPF.Mvvm
 {
     public class DialogViewModelBase : ViewModelBase, IDialogAware, IRegionManagerAware
     {
-        private DelegateCommand _applyCommand;
-        private DelegateCommand _saveCommand;
-        private DelegateCommand _okCommand;
-        private DelegateCommand _cancelCommand;
-        private DelegateCommand _yesCommand;
-        private DelegateCommand _noCommand;
-        private DelegateCommand _retryCommand;
-        private DelegateCommand _abortCommand;
+        public DialogViewModelBase()
+        {
+            ApplyCommand = new DelegateCommand(ExecuteApplyCommand, ExecuteCanApplyCommand);
+            SaveCommand = new DelegateCommand(ExecuteSaveCommand, ExecuteCanSaveCommand);
+            OkCommand = new DelegateCommand(ExecuteOkCommand);
+            CancelCommand = new DelegateCommand(ExecuteCancelCommand);
+            YesCommand = new DelegateCommand(ExecuteYesCommand);
+            NoCommand = new DelegateCommand(ExecuteNoCommand);
+            RetryCommand = new DelegateCommand(ExecuteRetryCommand);
+            AbortCommand = new DelegateCommand(ExecuteAbortCommand);
+        }
 
-        public virtual DelegateCommand ApplyCommand =>
-            _applyCommand ??= new DelegateCommand(ExecuteApplyCommand, ExecuteCanApplyCommand);
+        public virtual DelegateCommand ApplyCommand { get; }
 
-        public virtual DelegateCommand SaveCommand =>
-            _saveCommand ??= new DelegateCommand(ExecuteSaveCommand, ExecuteCanSaveCommand);
+        public virtual DelegateCommand SaveCommand { get; }
 
-        public virtual DelegateCommand OkCommand =>
-            _okCommand ??= new DelegateCommand(ExecuteOkCommand);
+        public virtual DelegateCommand OkCommand { get; }
 
-        public virtual DelegateCommand CancelCommand =>
-            _cancelCommand ??= new DelegateCommand(ExecuteCancelCommand);
+        public virtual DelegateCommand CancelCommand { get; }
 
-        public virtual DelegateCommand YesCommand =>
-            _yesCommand ??= new DelegateCommand(ExecuteYesCommand);
+        public virtual DelegateCommand YesCommand { get; }
 
-        public virtual DelegateCommand NoCommand =>
-            _noCommand ??= new DelegateCommand(ExecuteNoCommand);
+        public virtual DelegateCommand NoCommand { get; }
 
-        public virtual DelegateCommand RetryCommand =>
-            _retryCommand ??= new DelegateCommand(ExecuteRetryCommand);
+        public virtual DelegateCommand RetryCommand { get; }
 
-        public DelegateCommand AbortCommand =>
-            _abortCommand ??= new DelegateCommand(ExecuteAbortCommand);
+        public DelegateCommand AbortCommand { get; }
 
-        public IRegionManager RegionManager { get; set; }
+        public IRegionManager? RegionManager { get; set; }
 
-        public event Action<IDialogResult> RequestClose;
+        public event Action<IDialogResult>? RequestClose;
 
         protected virtual void RaiseRequestClose(IDialogResult dialogResult)
         {
@@ -57,17 +53,14 @@ namespace CoreTools.WPF.Mvvm
 
         public virtual void OnDialogClosed()
         {
-            
         }
 
         public virtual void OnDialogOpened(IDialogParameters parameters)
         {
-            
         }
 
         protected virtual void ExecuteApplyCommand()
         {
-            throw new NotImplementedException();
         }
 
         protected virtual bool ExecuteCanApplyCommand()
@@ -77,7 +70,6 @@ namespace CoreTools.WPF.Mvvm
 
         protected virtual void ExecuteSaveCommand()
         {
-            throw new NotImplementedException();
         }
 
         protected virtual bool ExecuteCanSaveCommand()

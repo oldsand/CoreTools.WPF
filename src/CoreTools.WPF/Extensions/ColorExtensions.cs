@@ -6,7 +6,7 @@ namespace CoreTools.WPF.Extensions
     {
         public static Color FromHex(this Color color, string hexColor)
         {
-            return (Color?)ColorConverter.ConvertFromString(hexColor) ?? Colors.Transparent;
+            return (Color)ColorConverter.ConvertFromString(hexColor);
         }
     }
 }

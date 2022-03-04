@@ -7,11 +7,15 @@ namespace CoreTools.WPF.Mvvm
     public abstract class NavigationViewModelBase : ViewModelBase, IConfirmNavigationRequest, IRegionMemberLifetime,
         IRegionManagerAware, ICreateScopedRegionManager
     {
+        /// <summary>
+        /// Gets the value indicating whether to keep the view and view model in memory after being navigated away from.
+        /// The default value is set to 'true', which will keep the view in memory.
+        /// </summary>
         public virtual bool KeepAlive => true;
 
         public virtual bool CreateScopedRegionManager => false;
 
-        public IRegionManager RegionManager { get; set; }
+        public IRegionManager? RegionManager { get; set; }
 
         public virtual void OnNavigatedTo(NavigationContext navigationContext)
         {
