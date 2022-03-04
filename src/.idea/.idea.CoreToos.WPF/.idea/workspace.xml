@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5fecc860-56eb-4301-9a6b-4a23f1d26979" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/.idea/.idea.ui.wpf/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/.idea/.idea.ui.wpf/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/App.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/AttachedProperties/BorderProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/AttachedProperties/TabControlProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/AttachedProperties/TextBoxProperties.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/CollapsibleColumnDefinition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/CollapsibleRowDefinition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/ColorExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/ComboBoxTemplateSelectorExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/DependencyObjectExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/EnumBindingSourceExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/TreeViewItemExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Extensions/ValidationBinding.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Mvvm/DialogViewModelBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Mvvm/MvvmHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Mvvm/NavigationViewModelBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Mvvm/ViewModelBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Utilities/BindingProxy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/Utilities/ResourceFinder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui.wpf/ui.wpf/ui.wpf.csproj" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="25vPH1XllWr5rMwWaT9TDBEvZS5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fecc860-56eb-4301-9a6b-4a23f1d26979" name="Changes" comment="" />
+      <created>1646404499825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646404499825</updated>
+      <workItem from="1646404510162" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
