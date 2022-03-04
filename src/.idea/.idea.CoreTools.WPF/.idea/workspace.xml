@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a0925a97-5d90-4f88-a8fc-29bb1cfe314a" name="Changes" comment="Adding content from gmerge project. Updated to .net core app. renaming">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreTools.WPF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreTools.WPF/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/CoreTools.WPF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/CoreTools.WPF.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Extensions/ColorExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Extensions/ColorExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/DialogViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/DialogViewModelBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/NavigationViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/NavigationViewModelBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Prism/IRegionManagerAware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Prism/IRegionManagerAware.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646404591448</updated>
       <workItem from="1646404610600" duration="1141000" />
+      <workItem from="1646405979237" duration="1097000" />
     </task>
     <task id="LOCAL-00001" summary="Adding content from gmerge project. Updated to .net core app. renaming">
       <created>1646404673421</created>
@@ -58,7 +57,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
