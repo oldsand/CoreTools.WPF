@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace ioList.Resources.Controls
+namespace CoreTools.WPF.Controls
 {
     public class Icon : Control
     {

@@ -8,12 +8,12 @@ namespace CoreTools.WPF.Converters
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value is SolidColorBrush brush ? brush.Color : null;
+            return value is SolidColorBrush brush ? brush.Color : new SolidColorBrush(Colors.Black);
         }
 
         public override object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value is Color color ? new SolidColorBrush(color) : null;
+            return value is Color color ? new SolidColorBrush(color) : new SolidColorBrush(Colors.Black);
         }
     }
 }

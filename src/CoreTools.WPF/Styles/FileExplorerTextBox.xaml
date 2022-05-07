@@ -1,0 +1,125 @@
+﻿<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:controls="clr-namespace:CoreTools.WPF.Controls"
+  xmlns:attachedProperties="clr-namespace:CoreTools.WPF.AttachedProperties">
+  
+  <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />
+  <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA" />
+  <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5" />
+  
+  <ControlTemplate x:Key="FolderIcon" TargetType="{x:Type controls:Icon}">
+    <Viewbox>
+      <Path
+        Fill="{TemplateBinding Foreground}"
+        Stretch="Uniform"
+        SnapsToDevicePixels="False"
+        UseLayoutRounding="False"
+        Data="M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z" />
+    </Viewbox>
+  </ControlTemplate>
+  
+  <ControlTemplate x:Key="FolderButtonTemplate" TargetType="{x:Type controls:IconButton}">
+    <Grid SnapsToDevicePixels="True">
+      <Border x:Name="MainBorder"
+              Background="{TemplateBinding Background}"
+              BorderBrush="{TemplateBinding BorderBrush}"
+              BorderThickness="{TemplateBinding BorderThickness}"
+              CornerRadius="{Binding RelativeSource={RelativeSource TemplatedParent},
+               Path=(attachedProperties:BorderProperties.CornerRadius)}">
+        <Border x:Name="InnerBorder"
+                Margin="{TemplateBinding Padding}">
+          <controls:Icon x:Name="Icon"
+                         Template="{TemplateBinding Icon}" />
+        </Border>
+      </Border>
+    </Grid>
+  </ControlTemplate>
+
+  <Style x:Key="FolderButtonStyle" TargetType="{x:Type controls:IconButton}">
+    <Style.Triggers>
+      <Trigger Property="IsEnabled" Value="False">
+        <Setter Property="Opacity" Value="0.56" />
+      </Trigger>
+    </Style.Triggers>
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="attachedProperties:BorderProperties.CornerRadius" Value="0" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="Padding" Value="5" />
+    <Setter Property="UseLayoutRounding" Value="False" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="IsTabStop" Value="False" />
+    <Setter Property="Template" Value="{StaticResource FolderButtonTemplate}" />
+  </Style>
+  
+  <ControlTemplate x:Key="FolderBrowserTextBoxTemplate" TargetType="{x:Type controls:FileExplorerTextBox}">
+    <Border
+      x:Name="border"
+      Background="{TemplateBinding Background}"
+      BorderBrush="{TemplateBinding BorderBrush}"
+      BorderThickness="{TemplateBinding BorderThickness}"
+      CornerRadius="{Binding RelativeSource={RelativeSource TemplatedParent},
+               Path=(attachedProperties:BorderProperties.CornerRadius)}"
+      SnapsToDevicePixels="True">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer
+          x:Name="PART_ContentHost"
+          Grid.Column="0"
+          Focusable="false"
+          HorizontalScrollBarVisibility="Hidden"
+          VerticalScrollBarVisibility="Hidden" />
+
+        <controls:IconButton
+          Grid.Column="1"
+          Style="{StaticResource FolderButtonStyle}"
+          Icon="{StaticResource FolderIcon}"
+          Command="Open" />
+      </Grid>
+
+    </Border>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsEnabled" Value="false">
+        <Setter TargetName="border" Property="Opacity" Value="0.56" />
+      </Trigger>
+      <Trigger Property="IsMouseOver" Value="true">
+        <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource TextBox.MouseOver.Border}" />
+      </Trigger>
+      <Trigger Property="IsKeyboardFocused" Value="true">
+        <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource TextBox.Focus.Border}" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+
+  <Style TargetType="{x:Type controls:FileExplorerTextBox}">
+    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+    <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}" />
+    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+    <Setter Property="HorizontalContentAlignment" Value="Left" />
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="AllowDrop" Value="true" />
+    <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
+    <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+    <Setter Property="Template" Value="{StaticResource FolderBrowserTextBoxTemplate}" />
+    <Style.Triggers>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true" />
+          <Condition Property="IsSelectionActive" Value="false" />
+        </MultiTrigger.Conditions>
+        <Setter Property="SelectionBrush"
+                Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}" />
+      </MultiTrigger>
+    </Style.Triggers>
+  </Style>
+</ResourceDictionary>

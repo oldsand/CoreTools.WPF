@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+    
     <PropertyGroup>
         <UseWPF>true</UseWPF>
         <Nullable>enable</Nullable>
@@ -10,10 +11,12 @@
         <AssemblyVersion>0.1.0</AssemblyVersion>
         <FileVersion>0.1.0</FileVersion>
         <TargetFramework>net5.0-windows</TargetFramework>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+        <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
         <PackageReference Include="Prism.Core" Version="8.1.97" />
         <PackageReference Include="Prism.Wpf" Version="8.1.97" />
     </ItemGroup>
@@ -29,27 +32,36 @@
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Controls</_Parameter2>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Converters</_Parameter2>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Extensions</_Parameter2>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Mvvm</_Parameter2>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Prism</_Parameter2>
         </AssemblyAttribute>
         <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
             <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
-            <_Parameter2>CoreTools.WPF.Behaviors</_Parameter2>
+            <_Parameter2>CoreTools.WPF.Selectors</_Parameter2>
+        </AssemblyAttribute>
+        <AssemblyAttribute Include="System.Windows.Markup.XmlnsDefinitionAttribute">
+            <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
+            <_Parameter2>CoreTools.WPF.Utilities</_Parameter2>
+        </AssemblyAttribute>
+        
+        <AssemblyAttribute Include="System.Windows.Markup.XmlnsPrefix">
+            <_Parameter1>http://CoreTools.com/wpf</_Parameter1>
+            <_Parameter2>core</_Parameter2>
         </AssemblyAttribute>
     </ItemGroup>
 

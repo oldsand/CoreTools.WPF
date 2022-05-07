@@ -8,7 +8,6 @@ namespace CoreTools.WPF.Mvvm
 {
     public abstract class ViewModelBase : BindableBase, IDestructible
     {
-
         private string _title;
         private ControlTemplate _icon;
         private bool _loading;
@@ -37,7 +36,6 @@ namespace CoreTools.WPF.Mvvm
 
         protected virtual void Load()
         {
-            Loading = true;
         }
         
         protected virtual Task LoadAsync()

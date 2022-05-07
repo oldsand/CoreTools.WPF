@@ -15,7 +15,7 @@ namespace CoreTools.WPF.Behaviors
             
             var tabItem = (args.OriginalSource as DependencyObject).FindVisualAncestor<TabItem>();
 
-            var tabControl = tabItem?.FindVisualAncestor<TabControl>();
+            var tabControl = tabItem.FindVisualAncestor<TabControl>();
             if (tabControl == null) return;
 
             var region = RegionManager.GetObservableRegion(tabControl).Value;
