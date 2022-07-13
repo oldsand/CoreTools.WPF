@@ -61,7 +61,8 @@ namespace CoreTools.WPF.Controls
             var dialog = new VistaOpenFileDialog
             {
                 Title = Title,
-                Filter = Filter
+                Filter = Filter,
+                
             };
 
             if (dialog.ShowDialog() == true)

@@ -13,10 +13,9 @@ namespace CoreTools.WPF.Converters
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!(value is TreeViewItem item))
-                return new Thickness(0);
-
-            return new Thickness(Length * item.GetDepth(), 0, 0, 0);
+            return value is not TreeViewItem item 
+                ? new Thickness(0) 
+                : new Thickness(Length * item.GetDepth(), 0, 0, 0);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -32,7 +31,7 @@ namespace CoreTools.WPF.Converters
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!(value is TreeViewItem item))
+            if (value is not TreeViewItem item)
                 return 0;
 
             return Multiplier * item.GetDepth();

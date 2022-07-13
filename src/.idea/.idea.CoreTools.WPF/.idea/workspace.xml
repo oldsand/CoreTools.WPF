@@ -8,27 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0925a97-5d90-4f88-a8fc-29bb1cfe314a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/App.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/App.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/CoreTools.TestApp.NET5.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/FileExplorerTextBox.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Converters/BooleanDoubleConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Icons.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Resources.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Styles/FileExplorerTextBox.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Styles/IconButton.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/app.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/DropDownButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/TreeListView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/TreeListViewItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/IO/FileDialogOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/IO/FileService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Services/IFileService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Styles/TreeListViewItem.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CoreTools.WPF/Utilities/FileExplorer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreTools.WPF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreTools.WPF/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Behaviors/CloseTabAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Behaviors/CloseTabAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Controls/Icon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/Icon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Controls/IconButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/IconButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Converters/BrushToColorConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Converters/BrushToColorConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/CoreTools.WPF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/CoreTools.WPF.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.TestApp.NET5/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Controls/FileExplorerTextBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Controls/FileExplorerTextBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Converters/LeftMarginMultiplierConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Converters/LeftMarginMultiplierConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Extensions/TreeViewItemExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Extensions/TreeViewItemExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/ViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Mvvm/ViewModelBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Resources.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Resources.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreTools.WPF/Utilities/ResourceFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTools.WPF/Utilities/ResourceFinder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +38,18 @@
       </list>
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3d7feeea46f0a7edf6cb722578ee59fa71a0641fbdb2b3662221f519f8e9efe5/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a0679f594374362cc511c9435cdff9a04cdaedc9d36dfb74bd9e2ead9f678e/VistaFileDialog.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ccd821dec1842e14c98aff59e290603965d2801cc2a14c475f7408ce48d261b/VistaOpenFileDialog.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CoreTools.WPF/Controls/FileExplorerTextBox.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,17 +61,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="CoreTools.TestApp.NET5" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -100,7 +108,12 @@
       <workItem from="1649003069016" duration="8739000" />
       <workItem from="1649106177164" duration="5136000" />
       <workItem from="1651626396773" duration="640000" />
-      <workItem from="1651932505413" duration="9138000" />
+      <workItem from="1651932505413" duration="9169000" />
+      <workItem from="1652013768313" duration="1278000" />
+      <workItem from="1653150123767" duration="1761000" />
+      <workItem from="1653666651147" duration="4049000" />
+      <workItem from="1654971885370" duration="5616000" />
+      <workItem from="1657742277528" duration="1117000" />
     </task>
     <task id="LOCAL-00001" summary="Adding content from gmerge project. Updated to .net core app. renaming">
       <created>1646404673421</created>
@@ -116,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646412232103</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Development...">
+      <created>1651966116406</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651966116406</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +160,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Adding content from gmerge project. Updated to .net core app. renaming" />
     <MESSAGE value="adding icon controls" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding icon controls" />
+    <MESSAGE value="Development..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Development..." />
   </component>
 </project>

@@ -10,28 +10,50 @@
   Height="450"
   mc:Ignorable="d">
 
-  <Grid Background="LightGray">
-    <StackPanel>
-      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-        <core:Icon Template="{StaticResource Icon.Folder}" Margin="10" />
-        <core:Icon Template="{StaticResource Icon.Settings}" Margin="10" />
-        <Border Margin="10" BorderBrush="Red"
-                BorderThickness="1"
-                Background="Azure"
-                Height="16"
-                Width="16">
-          <core:Icon Template="{StaticResource Icon.Folder}"
-                     VerticalAlignment="Center"
-                     HorizontalAlignment="Center" Margin="5"/>
-        </Border>
-      </StackPanel>
-      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-        <core:IconButton Icon="{StaticResource Icon.Folder}" Margin="20"
-                         Background="DarkGray" Foreground="Navy" Height="16" Width="16" Padding="2"
-                         core:BorderProperties.CornerRadius="0" />
-      </StackPanel>
-      <core:FileExplorerTextBox VerticalContentAlignment="Center" Height="26" Width="300" />
-    </StackPanel>
+  <Window.Resources>
+    <Style TargetType="{x:Type core:TreeListViewItem}">
+      <Setter Property="Template" Value="{StaticResource TreeListItemTemplate}" />
+      <Setter Property="Padding" Value="5" />
+      <Setter Property="BorderBrush" Value="Blue" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+  </Window.Resources>
 
+  <!--<DataTemplate x:Key="CellTemplate_Name">
+
+    <DockPanel>
+
+      <ToggleButton x:Name="Expander" Style="…" ClickMode="Press"
+
+                    Margin="{Binding Level,Converter={StaticResource LevelToIndentConverter},RelativeSource={RelativeSource AncestorType={x:Type l:TreeListViewItem}}}"
+
+                    IsChecked="{Binding Path=IsExpanded,RelativeSource={RelativeSource AncestorType={x:Type l:TreeListViewItem}}}"
+
+      />
+
+      <TextBlock Text="{Binding Name}"/>
+
+    </DockPanel>
+
+    <DataTemplate.Triggers>
+
+      <DataTrigger Binding="{Binding Path=HasItems,RelativeSource={RelativeSource AncestorType={x:Type l:TreeListViewItem}}}"
+
+                   Value="False">
+
+        <Setter TargetName="Expander"
+
+                Property="Visibility"
+
+                Value="Hidden"/>
+
+      </DataTrigger>
+
+    </DataTemplate.Triggers>
+
+  </DataTemplate>-->
+
+  <Grid Background="LightGray">
+   <core:FileExplorerTextBox Height="26" Width="400" SelectFolder="True"></core:FileExplorerTextBox>
   </Grid>
 </Window>

@@ -8,11 +8,11 @@ namespace CoreTools.WPF.Mvvm
 {
     public abstract class ViewModelBase : BindableBase, IDestructible
     {
-        private string _title;
-        private ControlTemplate _icon;
+        private string? _title;
+        private ControlTemplate? _icon;
         private bool _loading;
 
-        public string Title
+        public string? Title
         {
             get => _title;
             set => SetProperty(ref _title, value);
@@ -24,7 +24,7 @@ namespace CoreTools.WPF.Mvvm
             set => SetProperty(ref _loading, value);
         }
 
-        public ControlTemplate Icon
+        public ControlTemplate? Icon
         {
             get => _icon;
             set => SetProperty(ref _icon, value);
